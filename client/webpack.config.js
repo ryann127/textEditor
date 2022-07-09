@@ -29,7 +29,18 @@ module.exports = () => {
         swDest: 'src-sw.js'
       }),
       //need manifest.json
-      
+      new WebpackPwaManifest({
+        fingerprints: false,
+        inject: true,
+        name: '',
+        short_name: '',
+        description: '',
+        background_color: '#255ca3',
+        theme_color: '#255ca3',
+        start_url: '/',
+        publicPath: '/',
+        icons: []
+      })
     ],
     //modules needed
     module: {
