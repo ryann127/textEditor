@@ -17,10 +17,21 @@ module.exports = () => {
       filename: '[name].bundle.js',
       path: path.resolve(__dirname, 'dist'),
     },
+    //plugins needed
     plugins: [
+      //generates html file and  plugs in bundles
+      new HtmlWebpackPlugin({
+        template: './index.html',
+        title: 'Just Another Text Editor' //JATE
+      }),
+      new InjectManifest({
+        swSrc: './src-sw.js',
+        swDest: 'src-sw.js'
+      }),
+      //need manifest.json
       
     ],
-
+    //modules needed
     module: {
       rules: [
         
