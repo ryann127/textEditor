@@ -23,6 +23,8 @@ git clone the following repository:
  ## Usage
  Do npm run start and follow the server to the functioning browser. Type as you normally would
 
+ ![Website Screenshot](./images/website.png)
+
  ## License
 
  This application uses the MIT license. For more information, please follow the below link.
